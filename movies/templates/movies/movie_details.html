@@ -1,0 +1,336 @@
+{% load staticfiles %}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>{{ movie_data.movie_title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  overflow:hidden;
+}
+a {
+  text-decoration: none;
+  color: #5C7FB8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.movie-card {
+  font: 14px/22px "Lato", Arial, sans-serif;
+  color: #A9A8A3;
+  padding: 40px 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 780px;
+  height: 640px;
+  background: #F0F0ED;
+  border-radius: 5px;
+  position: relative;
+}
+
+.hero {
+  height: 342px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.hero:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: url("{% static 'images/blur_bg.jpg' %}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+{#  -webkit-transform: skewY(-2.2deg);#}
+{#          transform: skewY(-2.2deg);#}
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-backface-visibility: hidden;
+}
+
+.cover {
+  position: absolute;
+  top: 160px;
+  left: 40px;
+  z-index: 2;
+}
+
+.details {
+  padding: 190px 0 0 280px;
+}
+.details .title1 {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 13px;
+  position: relative;
+  line-height: 1.0;
+}
+.details .title1 span {
+  position: absolute;
+  top: 3px;
+  margin-left: 12px;
+  background: #C4AF3D;
+  border-radius: 5px;
+  color: #544C21;
+  font-size: 14px;
+  padding: 0px 4px;
+}
+.details .title2 {
+  color: #C7C1BA;
+  font-size: 23px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.details .likes {
+  margin-left: 24px;
+}
+.details .likes:before {
+  content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png");
+  position: relative;
+  top: 2px;
+  padding-right: 7px;
+}
+
+.description {
+  bottom: 0px;
+  height: 200px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B1B0AC;
+}
+
+.column1 {
+  padding-left: 50px;
+  padding-top: 120px;
+  width: 220px;
+  float: left;
+  text-align: center;
+}
+
+.tag {
+  background: white;
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 14px;
+  margin-right: 4px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: #ddd;
+}
+
+.column2 {
+  padding-left: 41px;
+  padding-top: 30px;
+  margin-left: 20px;
+  width: 480px;
+  float: left;
+}
+
+
+fieldset, label {
+  margin: 0;
+  padding: 0;
+}
+
+/****** Style Star Rating Widget *****/
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 5px;
+  margin-top: 0;
+  font-size: 1.5em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+
+/* hover previous stars in list */
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}
+a[data-tooltip] {
+  position: relative;
+}
+a[data-tooltip]::before,
+a[data-tooltip]::after {
+  position: absolute;
+  display: none;
+  opacity: 0.85;
+}
+
+a[data-tooltip]::before {
+  /*
+   * using data-tooltip instead of title so we
+   * don't have the real tooltip overlapping
+   */
+  content: attr(data-tooltip);
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 5px;
+  /* we don't want the text to wrap */
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+a[data-tooltip]::after {
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  content: '';
+}
+
+a[data-tooltip]:hover::before,
+a[data-tooltip]:hover::after {
+  display: block;
+}
+
+/** positioning **/
+/* top tooltip */
+a[data-tooltip][data-placement="top"]::before {
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 40px;
+}
+
+a[data-tooltip][data-placement="top"]::after {
+  border-top-color: #000;
+  border-bottom: none;
+  bottom: 50px;
+  left: 20px;
+  margin-bottom: 4px;
+}
+    .inline-block {
+   display: inline-block;
+}
+    .similar-movies {
+        display: flex;
+        flex-float: row wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .fx {
+        display:flex;
+    }
+    a {
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+  <div class="fluid-container">
+    <div class="title-bar fx" style="justify-content: space-between;padding:15px;">
+        <div class="left">
+            <a href="/" class="btn red"><p class="bold" style="font-size:24px;">Movies</p></a>
+        </div>
+        <div class="profile-box name-logout">
+            <a href="{% url 'accounts:logout' %}" class="btn red" style="font-size:20px;">{{ user }} | Logout</a>
+        </div>
+    </div>
+    <img src="{{ movie_data.movie_link }}" width="187px" height="282px" alt="cover" class="cover" />
+    <div class="hero">
+      <div class="details">
+        <div class="title1">{{ movie_data.movie_title }}</div>
+            <span class="tag" style="margin-right:0px;color:black;">{{ movie_data.movie_genre }}</span>
+      </div>
+    </div>
+    <div class="description">
+       <div class="column1" style="padding-left:200px;padding-top:0px;">
+        <div class="container" style="height: 300px;width: 1000px;margin-left:100px;">
+          <div style="padding:20px;margin-top:30px;" class="fx">
+            <p style="font-weight: bold;font-size: 28px;font-family:Sans-Serif;color:black;margin-bottom: 10px;align-self: center">
+                Similar Movies to this item
+            </p>
+            <ul class="similar-movies">
+                {% for p in similar_movies %}
+                    <li style="margin-left: 20px" class="inline-block">
+                        <a  href="{% url 'movies:detail' %}?title={{ p.movie_title }}">
+                            <img src="{{ p.movie_link }}" height="195px" width="130px" alt="" />
+                            <p style="width: 128px">{{ p.movie_title}}</p>
+                        </a>
+                    </li>
+                    <a href="{% url 'movies:detail' %}?title={{ p.movie_title }}"></a>
+                {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+    window.onload = function() {
+        rateAjax();
+    }
+    function rateAjax(){
+        var ratingValue = +"{{ rating_value }}";
+        alert(ratingValue);
+        ratingValue = ratingValue + 3;
+        alert(ratingValue);
+            var url="{% url 'movies:rate' %}?movie_id={{movie_data.movie_id}}&rating="+ratingValue;
+			console.log(url)
+			var req=new XMLHttpRequest();
+			req.open('GET',url)
+			req.onload=function()
+			{
+				console.log(req.responseText);
+				alert("Success. Given "+ratingValue+" rating to {{ movie_data.movie_title }}.");
+			};
+			req.send();
+	}
+</script>
+
+
