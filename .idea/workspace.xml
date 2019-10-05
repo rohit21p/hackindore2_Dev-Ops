@@ -28,18 +28,28 @@
       <file leaf-file-name="movies.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movies/templates/movies/movies.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="343.8846" vertical-offset="9094" max-vertical-offset="11084">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="153" max-vertical-offset="11084">
               <caret line="9" column="147" selection-start-line="9" selection-start-column="147" selection-end-line="9" selection-end-column="147" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movies_utils.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="movie_details.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/movies/templates/movies/movie_details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.67355984" vertical-offset="5086" max-vertical-offset="5763">
+              <caret line="326" column="46" selection-start-line="326" selection-start-column="46" selection-end-line="326" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movies_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movies/movies_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48364154" vertical-offset="1938" max-vertical-offset="3043">
-              <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="3043">
+              <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
               <folding>
                 <element signature="e#38#57#0" expanded="true" />
               </folding>
@@ -50,7 +60,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movies/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+            <state vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1156">
               <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -62,7 +72,7 @@
       <file leaf-file-name="movie_data.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datasets/movie_data.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-51.0" vertical-offset="0" max-vertical-offset="1853">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="1853">
               <caret line="90" column="11" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="11" />
               <folding />
             </state>
@@ -97,8 +107,8 @@
         <option value="$PROJECT_DIR$/movies/views.py" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/login.html" />
         <option value="$PROJECT_DIR$/movies/templates/movies/movies.html" />
-        <option value="$PROJECT_DIR$/movies/templates/movies/movie_details.html" />
         <option value="$PROJECT_DIR$/movies/movies_utils.py" />
+        <option value="$PROJECT_DIR$/movies/templates/movies/movie_details.html" />
       </list>
     </option>
   </component>
@@ -134,7 +144,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -149,7 +158,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="recommendation-system-for-inter-related-content-master" />
+              <option name="myItemId" value="hackindore2_Dev-Ops" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -159,7 +168,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="recommendation-system-for-inter-related-content-master" />
+              <option name="myItemId" value="hackindore2_Dev-Ops" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -173,7 +182,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="recommendation-system-for-inter-related-content-master" />
+              <option name="myItemId" value="hackindore2_Dev-Ops" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -189,22 +198,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recommendation-system-for-inter-related-content-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recommendation-system-for-inter-related-content-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datasets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -477,7 +473,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1552" height="840" extended-state="6" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -523,6 +519,45 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/movies/templates/movies/movies.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="11084">
+          <caret line="9" column="147" selection-start-line="9" selection-start-column="147" selection-end-line="9" selection-end-column="147" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movies/movies_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3043">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#38#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movies/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1156">
+          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/movie_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="1853">
+          <caret line="90" column="11" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/easyRec/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
@@ -555,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -563,9 +597,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="7820">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -573,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2278">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -581,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="544">
           <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
@@ -621,9 +651,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5525" max-vertical-offset="7106">
           <caret line="325" column="4" selection-start-line="325" selection-start-column="4" selection-end-line="325" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -700,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.862069" vertical-offset="369" max-vertical-offset="2176">
           <caret line="30" column="4" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6315007" vertical-offset="0" max-vertical-offset="673">
           <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
@@ -741,17 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.43131462" vertical-offset="1601" max-vertical-offset="2278">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movies/templates/movies/movie_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.025848" vertical-offset="5195" max-vertical-offset="5814">
-          <caret line="159" column="1" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4110953" vertical-offset="0" max-vertical-offset="703">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,15 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movies/templates/movies/movies.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="343.8846" vertical-offset="9094" max-vertical-offset="11084">
-          <caret line="9" column="147" selection-start-line="9" selection-start-column="147" selection-end-line="9" selection-end-column="147" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,7 +811,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/datasets/movie_data.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-51.0" vertical-offset="0" max-vertical-offset="1853">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="1853">
           <caret line="90" column="11" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="11" />
           <folding />
         </state>
@@ -818,11 +822,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/movies/movies_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48364154" vertical-offset="1938" max-vertical-offset="3043">
-          <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="3043">
+          <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
           <folding>
             <element signature="e#38#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movies/templates/movies/movies.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="153" max-vertical-offset="11084">
+          <caret line="9" column="147" selection-start-line="9" selection-start-column="147" selection-end-line="9" selection-end-column="147" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movies/templates/movies/movie_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67355984" vertical-offset="5086" max-vertical-offset="5763">
+          <caret line="326" column="46" selection-start-line="326" selection-start-column="46" selection-end-line="326" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
